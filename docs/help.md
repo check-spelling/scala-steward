@@ -28,7 +28,7 @@ All command line arguments for the `scala-steward` application.
   --env-var VAR=VALUE                                Assigns the VALUE to the environment variable VAR (can be used multiple times)
   --process-timeout  DURATION                        Timeout for external process invokations, default: "10min"
   --max-buffer-size  LINES                           Size of the buffer for the output of an external process in lines, default: "8192"
-  --scalafix-migrations  URI                         Additional scalafix migrations configuraton file (can be used multiple times)
+  --scalafix-migrations  URI                         Additional scalafix migrations configuration file (can be used multiple times)
   --disable-default-scalafix-migrations  BOOLEAN     Wether to disable the default scalafix migration file
   --artifact-migrations  FILE                        An additional file with artifact migration configurations
   --cache-ttl  DURATION                              TTL for the caches, default: "2hours"
