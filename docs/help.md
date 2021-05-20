@@ -26,7 +26,7 @@ All command line arguments for the `scala-steward` application.
   --do-not-fork  BOOLEAN                             Wether to not push the update branches to a fork, default: "false"
   --ignore-opts-files  BOOLEAN                       Wether to remove ".jvmopts" and ".sbtopts" files before invoking the build tool  
   --env-var VAR=VALUE                                Assigns the VALUE to the environment variable VAR (can be used multiple times)
-  --process-timeout  DURATION                        Timeout for external process invokations, default: "10min"
+  --process-timeout  DURATION                        Timeout for external process invocations, default: "10min"
   --max-buffer-size  LINES                           Size of the buffer for the output of an external process in lines, default: "8192"
   --scalafix-migrations  URI                         Additional scalafix migrations configuration file (can be used multiple times)
   --disable-default-scalafix-migrations  BOOLEAN     Wether to disable the default scalafix migration file
