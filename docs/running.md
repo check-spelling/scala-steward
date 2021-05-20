@@ -193,7 +193,7 @@ There is an article on how they run Scala Steward on-premise at Avast:
 
 #### GitLab
 
-The following describes a setup using GitLab Docker runner, which you have to setup seperately.
+The following describes a setup using GitLab Docker runner, which you have to setup separately.
 
 1. create a "scalasteward" user in GitLab
 2. assign that user "Developer" permissions in every project that should be managed by Scala Steward
