@@ -193,7 +193,7 @@ final class GitLabApiAlg[F[_]](
                 res <-
                   client
                     .put[MergeRequestOut](
-                      url.mergeWhenPiplineSucceeds(repo, mr.iid),
+                      url.mergeWhenPipelineSucceeds(repo, mr.iid),
                       modify(repo)
                     )
                     // it's possible that our status changed from can be merged already,

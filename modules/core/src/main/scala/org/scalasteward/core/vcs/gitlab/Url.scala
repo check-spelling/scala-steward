@@ -38,7 +38,7 @@ class Url(apiHost: Uri) {
   def existingMergeRequest(repo: Repo, number: PullRequestNumber): Uri =
     mergeRequest(repo) / number.toString
 
-  def mergeWhenPiplineSucceeds(repo: Repo, number: PullRequestNumber): Uri =
+  def mergeWhenPipelineSucceeds(repo: Repo, number: PullRequestNumber): Uri =
     (existingMergeRequest(repo, number) / "merge")
       .withQueryParam("merge_when_pipeline_succeeds", "true")
 
