@@ -1,0 +1,57 @@
+# See https://github.com/check-spelling/check-spelling/wiki/Configuration-Examples:-patterns
+
+# data urls
+(['"])data:.*?\g{-1}
+data:[-a-zA-Z=;:/0-9+]*,\S*
+
+# GitHub SHAs
+\bapi.github\.com/repos/[^/]+/[^/]+/(?:git/|)[^/]+/[0-9a-f]+\b
+(?:\[[0-9a-f]+\]\(https:/|)/github\.com/[^/]+/[^/]+(?:/[^/]+/[0-9a-f]+(?:[-0-9a-zA-Z/#.]*|)\b|)
+\bgithub\.com/[^/]+/[^/]+[@#][0-9a-f]+\b
+# githubusercontent
+/[-a-z0-9]+\.githubusercontent\.com/[-a-zA-Z0-9?&=_\/.]*
+# gist github
+/gist\.github\.com/[^/]+/[0-9a-f]+
+# GitHub JSON
+"node_id": "[-a-zA-Z=;:/0-9+]*"
+# Contributor
+\[[^\]]+]\(https://github\.com/[^/]+\)
+
+# gitlab
+\bgitlab\.com/uploads/[-a-zA-Z=;:/0-9+]*
+
+# gitter
+\bgitter\.im/[^/]+/[^/]+\?at=[0-9a-f]+
+
+# gravatar
+\bgravatar\.com/avatar/[0-9a-f]+
+
+# bitbucket
+\bapi\.bitbucket\.org/\d+\.\d+/repositories/[^/]+/[^/]+/diff(?:stat|)/[^/]+/[^/]+:[0-9a-f]+
+\bapi\.bitbucket\.org/\d+\.\d+/repositories/[^/]+/[^/]+/commits?/[0-9a-f]+
+\bbitbucket\.org/[^/]+/[^/]+/commits?/[0-9a-f]+
+
+# SHAs
+(['"])[0-9a-f]{40}\g{-1}
+"hash": "[0-9a-f]+"
+
+# URL escaped characters
+\%[0-9A-F]{2}
+
+# <word>v#
+[Vv]\d+(?:\b|(?=[a-zA-Z_]))
+
+# ignore long runs of a single character:
+\b([A-Za-z])\g{-1}{3,}\b
+
+# Compiler flags
+[ >"`]-[DPWXY]
+
+# Scala versions
+
+"\d+\.\d+\.\d+(?:\+\d+|)-[0-9a-f]+"
+
+eed3si9n
+iAdvize
+"pass": "[^"]*"
+Some\(Credentials\("[^"]*", "[^"]*"\)\)
